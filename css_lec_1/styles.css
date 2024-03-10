@@ -1,0 +1,71 @@
+div {
+
+    border: 2px solid red;
+    /*  margin: 10px;
+    margin-top: 50px;
+    margin-left: 100px;*/
+}
+
+#d3 {
+    border: 2px solid red;
+    padding: 30px;
+    padding-bottom: 10px;
+}
+
+#d2 {
+
+    border: 5px solid green;
+    border-top-color: blue;
+}
+
+#d1 {
+    background-image: url(img1.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50%;
+    height: 500px;
+
+}
+
+.c4 {
+    background-color: #00ff00;
+}
+
+p {
+    font-size: large;
+    font-style: italic;
+}
+
+#p1 {
+
+    font: 2em sans-serif;
+
+}
+
+.c1 {
+
+    color: blue;
+    /*there are different ways to assign color*/
+    color: RGB(255, 0, 0);
+    /*another way, in hexadecimal code*/
+    color: #00ff00;
+}
+
+.c2 {
+    font-size: medium;
+}
+
+h2.c3 {
+    /*we can not write in reverse order. e.g .c3h2*/
+
+    font-size: 78px;
+
+}
+
+#d100 {
+    margin-bottom: 30px;
+}
+
+#d200 {
+    margin-top: 50px;
+}
