@@ -1,0 +1,37 @@
+#d1 {
+
+    width: 400px;
+    border: 1px solid red;
+    color: blue;
+    /*text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    line-height: 40px;
+    /*to increase vertical space between text*/
+    /*text-indent: 50px;
+    letter-spacing: 20px;
+    word-spacing: 10px;*/
+    /*writing-mode: vertical-rl;*/
+
+
+}
+
+a:link {
+    color: red;
+
+}
+
+a:visited {
+
+    color: green;
+}
+
+a:hover {
+
+    font-size: larger;
+}
+
+a:active {
+    color: yellow;
+    /*a hyperlink that is currently being interacted with the user. Whenever the user holds the mouse button on the link and not released yet */
+}
