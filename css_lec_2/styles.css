@@ -35,3 +35,16 @@ a:active {
     color: yellow;
     /*a hyperlink that is currently being interacted with the user. Whenever the user holds the mouse button on the link and not released yet */
 }
+
+/*3- font related properties*/
+
+#para2 {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    /*shortcut format: style variant weight size name*/
+    /*all above are optional however order must be same*/
+    font: italic small-caps bold 40px 'arial'
+
+}

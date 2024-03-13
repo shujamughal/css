@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Combination Example</title>
+    <style>
+        /* Combined rule for <p>, <div>, and elements with class "custom" */
+        p,
+        div,
+        .custom {
+            color: blue;
+            /* Applies to all <p> elements, <div> elements, and elements with class "custom" */
+            font-weight: bold;
+            /* Common style for all selected elements */
+        }
+
+        /* Additional styling for <p> elements */
+        p {
+            font-size: 16px;
+            /* Specific style for <p> elements */
+        }
+
+        /* Additional styling for <div> elements */
+        div {
+            background-color: lightgray;
+            /* Specific style for <div> elements */
+        }
+
+        /* Additional styling for elements with class "custom" */
+        .custom {
+            border: 1px solid black;
+            /* Specific style for elements with class "custom" */
+        }
+    </style>
+    <style>
+        /* Type selector */
+        p {
+            color: blue;
+            /* Applies to all <p> elements */
+        }
+
+        /* Class selector */
+        .special {
+            font-weight: bold;
+            /* Applies to elements with class="special" */
+        }
+
+        /* ID selector */
+        #unique {
+            text-decoration: underline;
+            /* Applies to the element with id="unique" */
+        }
+
+        /* Combined selectors */
+        p.special {
+            color: red;
+            /* Applies to <p> elements with class="special" */
+        }
+
+        /* Combined ID and type selector */
+        p#unique {
+            color: red;
+            /* Applies to <p> elements with id="unique" */
+        }
+
+        #unique.special {
+            text-decoration: none;
+            /* Overrides the previous text-decoration for the specific case */
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>This is a regular paragraph.</p>
+    <p class="special">This is a special paragraph with class.</p>
+    <p id="unique" class="special">This is a unique paragraph with both ID and class.</p>
+
+</body>
+
+</html>

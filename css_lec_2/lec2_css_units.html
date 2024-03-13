@@ -1,0 +1,30 @@
+<!--
+    In this example, the parent element (<div id="parent">) has a font size of 20 pixels. Now, the child element (<div id="child">) has a font size specified in "em" units. The font size of the child element is set to 1.5em.
+
+Since 1em is equal to the font size of its parent, the font size of the child element will be 1.5 times the font size of the parent.
+
+So, the font size of the child element will be:
+
+1.5 * 20 pixels = 30 pixels
+
+In this way, the "em" unit is relative to the font size of the element itself or its parent element, depending on where it is used.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="parent" style="font-size: 20px;">
+        This is the parent element.
+        <div id="child" style="font-size: 1.5em;">
+            This is the child element.
+        </div>
+    </div>
+</body>
+
+</html>

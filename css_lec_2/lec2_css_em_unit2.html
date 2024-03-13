@@ -1,0 +1,51 @@
+<!--The "em" unit is inherently tied to the font-size property,
+as it represents a relative measurement based on the font size of the element
+or its parent. However, it's not limited to only being used in the context
+of the font-size property. While it is commonly associated with font sizes,
+you can use the "em" unit for other properties as well,
+and it will be relative to the font size.-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em Unit Example</title>
+    <style>
+        body {
+            font-size: 20px;
+        }
+
+        .parent {
+            font-size: 1.5em;
+            /* 1.5 times the base font size (16px) of the body = 24px */
+            margin-bottom: 2em;
+            /* 2 times the font size of the .parent = 48px */
+        }
+
+        .child {
+            font-size: 1.2em;
+            /* 1.2 times the font size of the parent (.parent) = 28.8px */
+            padding: 0.5em;
+            /* 0.5 times the font size of the element = 14.4px */
+            border: 0.1em solid black;
+            /* 0.1 times the font size of the element = 2.88px */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <p>This is the parent element with increased font size.</p>
+        <div class="child">
+            <p>This is the child element with its own font size and styling.</p>
+        </div>
+    </div>
+    <div style="background-color: blue;">
+        last div
+    </div>
+
+</body>
+
+</html>
