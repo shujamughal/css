@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Example</title>
+    <style>
+        /* Define basic styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header,
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .sidebar {
+            background-color: #f2f2f2;
+            padding: 20px;
+            width: 200px;
+            float: left;
+            /* Float the sidebar to the left */
+        }
+
+        .content {
+            padding: 20px;
+            margin-left: 220px;
+            /* Add a margin to the left to accommodate the sidebar */
+        }
+
+        /* Define position properties for special elements */
+        .special-box {
+            padding: 20px;
+            background-color: #f0ad4e;
+            color: #fff;
+            text-align: center;
+        }
+
+        .absolute-box {
+            position: absolute;
+            top: 50px;
+            right: 20px;
+        }
+
+        .sticky-box {
+            position: sticky;
+            top: 10px;
+            background-color: #5cb85c;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+
+    <div class="sidebar">
+        <h2>Sidebar</h2>
+        <p>This is the sidebar content.</p>
+    </div>
+
+    <div class="content">
+        <h2>Main Content</h2>
+        <p>This is the main content area. It will expand to fill the available space once the sidebar is positioned.</p>
+        <!-- Example of an absolutely positioned box -->
+        <div class="special-box absolute-box">
+            Absolutely Positioned Box
+        </div>
+        <!-- Example of a sticky box -->
+        <div class="special-box sticky-box">
+            Sticky Box
+        </div>
+    </div>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+
+</html>
+<!--
+
+We have a basic layout structure with a header, sidebar, main content, and footer.
+The header and footer are styled with a dark background color and white text for visibility.
+The sidebar has a light gray background and is floated to the left to sit alongside the main content.
+The main content area has a margin to the left to accommodate the sidebar.
+We've introduced two special boxes:
+The .absolute-box is positioned absolutely, meaning it's placed relative to the nearest positioned ancestor (which, in this case, is the <body> element). It's positioned 50px from the top and 20px from the right.
+The .sticky-box is positioned sticky, meaning it remains in its normal flow position until the user scrolls to a specific point (10px from the top in this case), after which it becomes fixed to the viewport.
+-->

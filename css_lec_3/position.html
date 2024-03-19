@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Example</title>
+    <style>
+        .container {
+            height: 500px;
+            position: relative;
+        }
+
+        .static-box {
+            position: static;
+            background-color: yellow;
+        }
+
+        .relative-box {
+            position: relative;
+            top: 20px;
+            left: 30px;
+            background-color: cyan;
+        }
+
+        .absolute-box {
+            position: absolute;
+            top: 50px;
+            right: 0;
+            background-color: magenta;
+        }
+
+        .fixed-box {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: orange;
+        }
+
+        .sticky-box {
+            position: sticky;
+            top: 0;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="static-box">Static</div>
+        <div class="relative-box">Relative</div>
+        <div class="absolute-box">Absolute</div>
+        <div class="fixed-box">Fixed</div>
+        <div class="sticky-box">Sticky</div>
+    </div>
+</body>
+
+</html>
+<!--
+    static: This is the default position value. Elements with position: static; are positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect on elements with position: static
+    relative: When an element is positioned relatively, it's positioned relative to its normal position in the document flow. This means you can adjust its position using top, right, bottom, and left properties
+    absolute: When an element is positioned absolutely, it's removed from the normal document flow and positioned relative to its nearest positioned ancestor (an ancestor that is not static) or to the initial containing block if no positioned ancestor is found. Absolute positioning allows you to place elements precisely where you want them on the page
+    fixed: Fixed positioning is similar to absolute positioning, but the element is positioned relative to the browser window, and it doesn't move when the page is scrolled. This is commonly used for headers, footers, or other elements that you want to "stick" in a specific position on the screen.
+sticky: Elements with position: sticky; are positioned according to the normal flow of the document until they reach a specified scroll position, then they become fixed. Once the user scrolls past the specified point, the element behaves as if it were position: relative;.
+-->
