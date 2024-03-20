@@ -1,0 +1,57 @@
+<!--
+Flexbox, short for Flexible Box Layout, is a CSS layout model.
+It's designed for creating dynamic and flexible layouts in web development.
+Flexbox consists of two main components: the flex container and flex items.
+The flex container is any HTML element set to display: flex or display: inline-flex.
+Flex items are the child elements of a flex container.
+Flexbox operates along two axes: the main axis and the cross axis.
+The main axis is determined by the flex-direction property and controls the direction of the flex items.
+The cross axis is perpendicular to the main axis and is controlled by the align-items property.
+Flex items can have their own alignment within the cross axis using align-self.
+The flex property is used to control how flex items grow, shrink, and size themselves within the flex container.
+Flexbox simplifies complex layouts and provides better control over spacing and alignment.
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            border: 1px solid red;
+            display: flex;
+            height: 400px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .item {
+            background-color: lightgray;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            width: 300px;
+            /* Set a fixed width for the flex container */
+            border: 2px solid blue;
+        }
+
+        .item {
+            background-color: lightgray;
+            padding: 10px;
+            margin: 5px;
+            flex-grow: 1;
+            /* Allow items to grow */
+        }
+
+        .item1 {
+            flex-shrink: 4;
+            /* This item will shrink twice as much as other items */
+            width: 100px;
+            /* Set width smaller than container */
+        }
+
+        .item2 {
+            flex-shrink: 1;
+            /* This item will shrink equally with other items */
+            width: 120px;
+            /* Set width smaller than container */
+        }
+
+        .item3 {
+            flex-shrink: 6;
+            /* This item will not shrink */
+            width: 150px;
+            /* Set width smaller than container */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+    </div>
+
+</body>
+
+</html>

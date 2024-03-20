@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .flex-container {
+            display: flex;
+            border: 2px solid blue;
+        }
+
+        .item {
+            background-color: lightgray;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .item:nth-child(1) {
+            flex-grow: 1;
+            /* This item will grow equally */
+        }
+
+        .item:nth-child(2) {
+            flex-grow: 2;
+            /* This item will grow twice as much as the first one */
+        }
+
+        .item:nth-child(3) {
+            flex-grow: 3;
+            /* This item will grow three times as much as the first one */
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="flex-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+
+</body>
+
+</html>
