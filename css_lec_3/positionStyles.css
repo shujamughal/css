@@ -1,0 +1,62 @@
+body {
+    height: 1000px;
+
+}
+
+#parent {
+    border: 1px solid red;
+    padding: 20px;
+    width: 50%;
+    margin: 100px;
+    /*2- apply this in second step */
+    /*position: relative;*/
+    /*for sticky position apply following two */
+    height: 300px;
+    /* Set a height smaller than its content */
+    overflow-y: auto;
+    /* Make the parent scrollable */
+
+}
+
+#one {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display: inline-block;
+}
+
+#two {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: inline-block;
+    /*1- apply relative and understand the concept*/
+    /*position: relative;
+    top: 50px;
+    left: 50px;*/
+    /*2- apply this in second step */
+    /*position: absolute;
+    top: 0px;
+    left: 0px;*/
+    /*3- apply this in third step */
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+#three {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    display: inline-block;
+}
+
+#four {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    display: inline-block;
+    position: sticky;
+    top: 0px;
+    /* This ensures it "sticks" to the top when scrolling */
+}

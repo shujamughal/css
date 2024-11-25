@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Example</title>
+    <link rel="stylesheet" href="positionStyles.css">
+</head>
+
+<body>
+    <div id="parent">
+        <div id="one"> One</div>
+        <div id="two"> two</div>
+        <div id="three"> three</div>
+        <div id="four">Four</div>
+        <p>Additional content to enable scrolling...</p>
+        <p>More content...</p>
+        <p>Even more content...</p>
+        <p>Additional content to enable scrolling...</p>
+        <p>More content...</p>
+        <p>Even more content...</p>
+        <p>Additional content to enable scrolling...</p>
+        <p>More content...</p>
+        <p>Even more content...</p>
+        <p>Additional content to enable scrolling...</p>
+        <p>More content...</p>
+        <p>Even more content...</p>
+
+    </div>
+
+</body>
+
+</html>
+
+<!--
+Sticky positioning behaves like relative until a defined scroll threshold (e.g., top: 0px) is met.
+Once the threshold is crossed, it becomes fixed and "sticks" at that position within its scrollable parent container (#parent in this case).
+Sticky elements do not leave their container; they only stick within their scrollable boundary.
+
+
+-->

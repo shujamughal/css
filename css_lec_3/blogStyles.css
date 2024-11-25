@@ -1,0 +1,92 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Fixed Header */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+#header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* Container Layout */
+#container {
+    position: relative;
+    margin-top: 80px;
+    /* Space for the fixed header */
+}
+
+/* Sidebar */
+#sidebar {
+    position: sticky;
+    top: 80px;
+    /* Sticks below the fixed header */
+    width: 20%;
+    /* Fixed width for sidebar */
+    float: left;
+    /* Sidebar on the left */
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+/* Main Content */
+#content {
+    margin-left: 20%;
+    /* Space for sidebar */
+    padding: 20px;
+}
+
+#content img {
+    max-width: 100%;
+}
+
+#content figcaption {
+    position: relative;
+    top: -10px;
+    /* Slight adjustment */
+    font-size: 14px;
+    color: gray;
+}
+
+/* Author Info (Absolute) */
+#author-info {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fffbcc;
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+/* Footer */
+#footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    clear: both;
+    /* Ensure footer appears below floated elements */
+}
